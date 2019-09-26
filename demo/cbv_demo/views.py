@@ -7,7 +7,6 @@ from .models import Contact
 from rest_framework import  status, generics
 
 # Create your views here.
-
 class ContactData(generics.GenericAPIView):
     serializer_class = ContactDataSerializer
     permission_classes = [IsAuthenticated,]
